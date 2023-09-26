@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-nti3
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-duss-tenant/mc-quality-dashboard/backend-quality-dashboard-nti3@sha256:3eaf335215e25e2e873e46a2d258bac4a8d40f90063ec8380f2a71af84d21674
+        name: container-image
+        resources: {}
+status: {}
